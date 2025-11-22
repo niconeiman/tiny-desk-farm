@@ -11,11 +11,18 @@ const componentsPath = resolve(
 export default defineNuxtConfig({
   compatibilityDate: '2025-07-15',
   devtools: { enabled: true },
-  modules: ['@nuxtjs/tailwindcss'],
+  modules: ['@nuxtjs/tailwindcss', '@nuxtjs/supabase'],
   alias: {
     '@components': componentsPath,
   },
   vite: {
     plugins: [tsconfigPaths()],
+  },
+  supabase: {
+    redirectOptions: {
+      login: '/login',
+      callback: '/confirm',
+      exclude: ['/'],
+    },
   },
 });

@@ -1,4 +1,4 @@
 <script setup></script>
 <template>
-  <footer class="bg-gray-800 text-white p-4 text-center">Footer</footer>
+  <footer class="bg-primary-900 text-inverse p-4 text-center">Footer</footer>
 </template>

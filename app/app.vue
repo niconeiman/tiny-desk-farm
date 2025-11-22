@@ -10,7 +10,7 @@ useHead({
     },
   ],
   bodyAttrs: {
-    class: 'bg-gray-800',
+    class: 'bg-secondary',
   },
   script: [
     {

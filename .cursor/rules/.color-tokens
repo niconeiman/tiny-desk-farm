@@ -1,0 +1,72 @@
+# Design System Color Token Rules
+
+## When creating or editing .vue files:
+
+**Always use design system tokens from tailwind.config.js instead of generic Tailwind colors or hardcoded hex values.**
+
+## Token Usage Guidelines:
+
+### Primary Colors
+
+- `primary-50` (#f0f9f4): Light backgrounds for primary-colored sections, hover states on primary buttons (subtle), badges
+- `primary-100` (#dcf3e4): Slightly more visible primary backgrounds, selected states, light alerts with primary theme
+- `primary-500` (#10b981): Primary buttons, links, active navigation items, key CTAs, progress indicators, icons
+- `primary-600` (#059669): Hover state for primary buttons, pressed states, darker primary accents
+- `primary-900` (#064e3b): Primary text on light backgrounds, dark primary headings, high-contrast primary elements
+
+### Secondary Colors
+
+- `secondary-50` (#fef3c7): Light backgrounds for secondary sections, warning backgrounds (subtle), highlight areas
+- `secondary-500` (#f59e0b): Secondary buttons, alternative CTAs, accent highlights, tags, badges
+- `secondary-600` (#d97706): Hover state for secondary buttons, pressed secondary elements
+
+### Status Colors
+
+- `success-50` (#d1fae5): Success message backgrounds, positive notification backgrounds, completion badges
+- `success-500` (#10b981): Success messages, confirmation icons, positive status indicators, completed states
+- `warning-50` (#fef3c7): Warning message backgrounds, caution notification backgrounds, alert banners
+- `warning-500` (#f59e0b): Warning messages, caution icons, pending states, attention indicators
+- `error-50` (#fee2e2): Error message backgrounds, validation error backgrounds, destructive action confirmations
+- `error-500` (#ef4444): Error messages, destructive actions, validation errors, critical alerts, delete buttons
+- `info-50` (#dbeafe): Informational message backgrounds, help sections, tip backgrounds
+- `info-500` (#3b82f6): Informational messages, help icons, neutral notifications, tips, tooltips
+
+### Background Colors
+
+- `bg-primary` (#ffffff): Main page background, card backgrounds, modal backgrounds, primary surfaces
+- `bg-secondary` (#f9fafb): Alternate row backgrounds (tables), sidebar backgrounds, secondary panels, app shell
+- `bg-tertiary` (#f3f4f6): Disabled input backgrounds, subtle section dividers, hover states on secondary surfaces
+
+### Text Colors
+
+- `text-primary` (#111827): Main body text, headings, primary content, labels, high-priority information
+- `text-secondary` (#6b7280): Descriptive text, subheadings, supporting information, metadata, timestamps
+- `text-tertiary` (#9ca3af): Placeholder text, disabled text, helper text, footnotes, least important information
+- `text-inverse` (#ffffff): Text on dark/colored backgrounds, text on primary buttons, text in dark mode elements
+
+### Border Colors
+
+- `border-light` (#e5e7eb): Subtle dividers, table borders, card outlines, light separation between elements
+- `border-default` (#d1d5db): Input borders, standard dividers, default card borders, dropdown borders
+- `border-strong` (#9ca3af): Focus borders (non-primary), emphasized dividers, active input borders
+
+### Accent Colors
+
+- `accent-green` (#10b981): Crop/growth data visualization, health indicators, "go" states, plant-related metrics
+- `accent-blue` (#3b82f6): Water/irrigation data, weather information, moisture levels, sky-related metrics
+- `accent-brown` (#92400e): Livestock data, animal health, soil information, earth-related metrics
+- `accent-amber` (#f59e0b): Weather alerts, harvest indicators, sun/temperature data, time-sensitive information
+
+### Interactive States
+
+- `focus-ring` (#10b981): Keyboard focus indicators on interactive elements, accessibility outline for focused inputs
+- `hover-overlay` (rgba(0, 0, 0, 0.05)): Hover state on cards, list items, clickable rows, subtle interactive feedback
+- `disabled-bg` (#f3f4f6): Disabled button backgrounds, inactive input fields, non-interactive element backgrounds
+- `disabled-text` (#d1d5db): Text in disabled buttons, labels for inactive fields, non-interactive text content
+
+## Implementation Rules:
+
+1. **Replace generic Tailwind colors** (e.g., `gray-*`, `blue-*`, `green-*`) with appropriate design system tokens based on usage context
+2. **Replace hardcoded hex values** in inline styles or `<style>` tags with Tailwind utility classes using design tokens
+3. **Prefer Tailwind utility classes** over inline styles or style tags
+4. **Choose tokens based on semantic meaning** and the usage guidelines above, not just color similarity
